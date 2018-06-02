@@ -1,0 +1,320 @@
+<!--  -->
+<header>
+    <h3>温州·龙湾区行政服务中心系统数据展示</h3>
+    <h3>{{dateNow | date: 'HH:mm:ss' }}</h3>
+</header>
+<div class="mid">
+      <div class="midtop">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-2">
+                        <div class="col-up">接入部门</div>
+                        <div class="col-down">
+                            <h2>{{DepartmentCount}}</h2>
+                            <span>家</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                            <div class="col-up">累计交换量</div>
+                            <div class="col-down">
+                                <h2>{{AllCount}}</h2>
+                                <span>条</span>
+                            </div>
+                    </div>
+                    <div class="col-lg-2">
+                            <div class="col-up">今日输入总量</div>
+                            <div class="col-down">
+                                <h2>{{AllDepartmentConsignee}}</h2>
+                                <span>条</span>
+                            </div>
+                    </div>
+                    <div class="col-lg-2">
+                            <div class="col-up">今日输出总量</div>
+                            <div class="col-down">
+                                <h2>{{AllDepartmentOutpiece}}</h2>
+                                <span>条</span>
+                            </div>
+                    </div>
+                    <div class="col-lg-2">
+                            <div class="col-up">输入输入比</div>
+                            <div class="col-down">
+                                <h2>{{proportion|number:'1.1-2'}}</h2>
+                            </div>
+                    </div>
+                    <div class="col-lg-1"></div>
+                </div>
+            </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3">
+                <table class="table">
+                    <thead>
+                            <th>今日输出Top6</th>
+                            <th></th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>信用办</td>
+                            <td>1231 条</td>
+                        </tr>
+                        <tr>
+                                <td>信用办</td>
+                                <td>1231 条</td>
+                        </tr>
+                        <tr>
+                                <td>信用办</td>
+                                <td>1231 条</td>
+                        </tr>
+                        <tr>
+                                <td>信用办</td>
+                                <td>1231 条</td>
+                        </tr>
+                        <tr>
+                                <td>信用办</td>
+                                <td>1231 条</td>
+                        </tr>
+                        <tr>
+                                <td>信用办</td>
+                                <td>1231 条</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table">
+                        <thead>
+                                <th>今日输入Top6</th>
+                                <th></th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>信用办</td>
+                                <td>1231 条</td>
+                            </tr>
+                            <tr>
+                                    <td>信用办</td>
+                                    <td>1231 条</td>
+                            </tr>
+                            <tr>
+                                    <td>信用办</td>
+                                    <td>1231 条</td>
+                            </tr>
+                            <tr>
+                                    <td>信用办</td>
+                                    <td>1231 条</td>
+                            </tr>
+                            <tr>
+                                    <td>信用办</td>
+                                    <td>1231 条</td>
+                            </tr>
+                            <tr>
+                                    <td>信用办</td>
+                                    <td>1231 条</td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </div>
+            <div class="col-lg-6">
+                    <canvas #myCanvas  class="canvas" width="800" height="500">
+    
+                    </canvas>
+            </div>
+            <div class="col-lg-3">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td width="20%">{{dateNow | date: 'HH:mm:ss' }}</td>
+                            <td width="50%">
+                                <i  class="material-icons">arrow_back</i>
+                                <span>公安局</span>
+                            </td>
+                            <td width="30%">11条</td>
+                        </tr>
+                        <tr>
+                                <td width="20%">12:22:15</td>
+                                <td width="50%">
+                                    <i  class="material-icons">arrow_forward</i>
+                                    <span>公安局</span>
+                                </td>
+                                <td width="30%">11条</td>
+                        </tr>
+                        <tr>
+                                <td width="20%">12:22:15</td>
+                                <td width="50%">
+                                    <i  class="material-icons">home</i>
+                                    <span>公安局</span>
+                                </td>
+                                <td width="30%">11条</td>
+                        </tr>
+                        <tr>
+                                <td width="20%">12:22:15</td>
+                                <td width="50%">
+                                    <i  class="material-icons">home</i>
+                                    <span>公安局</span>
+                                </td>
+                                <td width="30%">11条</td>
+                        </tr>
+                        <tr>
+                                <td width="20%">12:22:15</td>
+                                <td width="50%">
+                                    <i  class="material-icons">home</i>
+                                    <span>公安局</span>
+                                </td>
+                                <td width="30%">11条</td>
+                        </tr>
+                        <tr>
+                                <td width="20%">12:22:15</td>
+                                <td width="50%">
+                                    <i  class="material-icons">home</i>
+                                    <span>公安局</span>
+                                </td>
+                                <td width="30%">11条</td>
+                        </tr>
+                        <tr>
+                                <td width="20%">12:22:15</td>
+                                <td width="50%">
+                                    <i  class="material-icons">home</i>
+                                    <span>公安局</span>
+                                </td>
+                                <td width="30%">11条</td>
+                        </tr>
+                        <tr>
+                            <td width="20%">12:22:15</td>
+                            <td width="50%">
+                                <i  class="material-icons">home</i>
+                                <span>公安局</span>
+                            </td>
+                            <td width="30%">11条</td>
+                        </tr>
+                        <tr>
+                                <td width="20%">12:22:15</td>
+                                <td width="50%">
+                                    <i  class="material-icons">home</i>
+                                    <span>公安局</span>
+                                </td>
+                                <td width="30%">11条</td>
+                        </tr>
+                        <tr>
+                                <td width="20%">12:22:15</td>
+                                <td width="50%">
+                                    <i  class="material-icons">home</i>
+                                    <span>公安局</span>
+                                </td>
+                                <td width="30%">11条</td>
+                        </tr>
+                        <tr>
+                            <td width="20%">12:22:15</td>
+                            <td width="50%">
+                                <i  class="material-icons">home</i>
+                                <span>公安局</span>
+                            </td>
+                            <td width="30%">11条</td>
+                        </tr>
+                        <tr>
+                                <td width="20%">12:22:15</td>
+                                <td width="50%">
+                                    <i  class="material-icons">home</i>
+                                    <span>公安局</span>
+                                </td>
+                                <td width="30%">11条</td>
+                        </tr>
+                        <tr>
+                                <td width="20%">12:22:15</td>
+                                <td width="50%">
+                                    <i  class="material-icons">home</i>
+                                    <span>公安局</span>
+                                </td>
+                                <td width="30%">11条</td>
+                        </tr>
+                        <tr>
+                            <td width="20%">12:22:15</td>
+                            <td width="50%">
+                                <i  class="material-icons">home</i>
+                                <span>公安局</span>
+                            </td>
+                            <td width="30%">11条</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+      </div>
+</div>
+<footer>
+    <div>
+        <div class="f-up">
+            <span>本周市级部门交换</span>
+        </div>
+        <div class="f-down">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-1" *ngFor='let item of items'>
+                            <div>{{item.name}}</div>
+                            <div><span>输入</span><span>{{item.consignee}}条</span></div>
+                            <div><span>输出</span><span>{{item.Outpiece}}条</span></div>
+                    </div>
+                <!--<div class="col-lg-1">
+                    <div>残联</div>
+                    <div><span>输入</span><span>24,937条</span></div>
+                    <div><span>输出</span><span>4937条</span></div>
+                </div>
+                <div class="col-lg-1">
+                    <div>残联</div>
+                    <div><span>输入</span><span>24,937条</span></div>
+                    <div><span>输出</span><span>4937条</span></div>
+                </div>
+                <div class="col-lg-1">
+                    <div>残联</div>
+                    <div><span>输入</span><span>24,937条</span></div>
+                    <div><span>输出</span><span>4937条</span></div>
+                </div>
+                <div class="col-lg-1">
+                    <div>残联</div>
+                    <div><span>输入</span><span>24,937条</span></div>
+                    <div><span>输出</span><span>4937条</span></div>
+                </div>
+                <div class="col-lg-1">
+                    <div>残联</div>
+                    <div><span>输入</span><span>24,937条</span></div>
+                    <div><span>输出</span><span>4937条</span></div>
+                </div>
+                <div class="col-lg-1">
+                    <div>残联</div>
+                    <div><span>输入</span><span>24,937条</span></div>
+                    <div><span>输出</span><span>4937条</span></div>
+                </div>
+                <div class="col-lg-1">
+                    <div>残联</div>
+                    <div><span>输入</span><span>24,937条</span></div>
+                    <div><span>输出</span><span>4937条</span></div>
+                </div>
+                <div class="col-lg-1">
+                    <div>残联</div>
+                    <div><span>输入</span><span>24,937条</span></div>
+                    <div><span>输出</span><span>4937条</span></div>
+                </div>
+                <div class="col-lg-1">
+                    <div>残联</div>
+                    <div><span>输入</span><span>24,937条</span></div>
+                    <div><span>输出</span><span>4937条</span></div>
+                </div>
+                <div class="col-lg-1">
+                    <div>残联</div>
+                    <div><span>输入</span><span>24,937条</span></div>
+                    <div><span>输出</span><span>4937条</span></div>
+                </div>
+                <div class="col-lg-1">
+                    <div>残联</div>
+                    <div><span>输入</span><span>24,937条</span></div>
+                    <div><span>输出</span><span>4937条</span></div>
+                </div>
+                <div class="col-lg-1">
+                    <div>残联</div>
+                    <div><span>输入</span><span>24,937条</span></div>
+                    <div><span>输出</span><span>4937条</span></div>
+                </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
